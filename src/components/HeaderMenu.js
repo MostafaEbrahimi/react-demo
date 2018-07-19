@@ -29,19 +29,19 @@ export default class HeaderMenu extends React.Component{
                     selectedKeys={[this.state.current]}
                     mode="horizontal"
                 >
-                    <Menu.Item key="main">
+                    <Menu.Item key="newworkflow">
                         <Link to='/newworkflow'>
                             <Icon type="file" />Create New Workflow
                         </Link>
                     </Menu.Item>
-                    <Menu.Item key="aboutus">
+                    <Menu.Item key="newform">
                         <Link to='/newform'>
-                            <Icon type="form" />Create New Form
+                            <Icon type="form" />Submit A Form
                         </Link>
                     </Menu.Item>
-                    <Menu.Item key="more">
+                    <Menu.Item key="support">
                         <Link to='/support'>
-                            <Icon type="wechat" />Support
+                            <Icon type="wechat" />Question And Answer
                         </Link>
                     </Menu.Item>
                 
