@@ -1,21 +1,16 @@
 import React from 'react'
 
-
-export default class CreateNewWorkflow extends React.Component{
-    
+export default class ContentContainer extends React.Component{
     constructor(props){
         super(props)
         this.state = {
-            
         }
     }
 
-  
-
-    render(){
+    render() {
         return(
-            <div>
-                this is CreateNewWorkflow
+            <div style={{padding:20}}>
+                {this.props.children}
             </div>
         );
     }

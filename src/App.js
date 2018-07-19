@@ -1,5 +1,6 @@
 import React from 'react'
 import './index.css'
+import './App.css'
 import { Row, Col,Layout,Button ,Affix } from 'antd'
 import HeaderMenu from './components/HeaderMenu'
 import CreateNewWorkflow from './components/CreateNewWorkflow'
@@ -34,10 +35,9 @@ class App extends React.Component {
             
             <HeaderMenu/>
             
-            <Content  style={{ background: '#ECECEC', padding: '30px' }}  >  
-        
+            <Content  style={{ background: '#FFF'}}  >  
               <Row >
-                <Col style={{ background: '#fff',padding:20, minHeight: 400,marginTop: 20 }} span={18} offset={3}>
+                <Col style={{borderWidth:'1px',borderStyle:'solid',borderColor: '#ebedf0',borderRadius:'2px' ,background: '#fff', minHeight: 400,marginTop: 20 }} span={18} offset={3}>
                   <Route exact path="/newworkflow" component={CreateNewWorkflow} />
                   <Route path="/newform" component={CreateNewForm} />
                   <Route path="/support" component={Support} />
@@ -45,7 +45,7 @@ class App extends React.Component {
               </Row>
               
             </Content>
-            <Footer>Footer</Footer>
+            {/* <Footer>Footer</Footer> */}
           </Layout>
           <Chat/>
         </div>

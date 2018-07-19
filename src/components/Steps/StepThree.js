@@ -1,22 +1,18 @@
 import React from 'react'
 
-
-export default class CreateNewWorkflow extends React.Component{
-    
+export default class StepThree extends React.Component{
     constructor(props){
         super(props)
         this.state = {
-            
         }
     }
 
-  
-
-    render(){
+    render() {
         return(
-            <div>
-                this is CreateNewWorkflow
+            <div >
+                Step 3
             </div>
+
         );
     }
 }
