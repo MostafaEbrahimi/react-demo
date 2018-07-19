@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import { Menu, Icon } from 'antd';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 

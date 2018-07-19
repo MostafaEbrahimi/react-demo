@@ -1,4 +1,8 @@
 
+.step-two-form{
+  max-width: 80%;
+}
+
 .App {
   text-align: center;
 }
@@ -27,3 +31,14 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.steps-content {
+  margin-top: 16px;
+  border: 1px dashed #e9e9e9;
+  border-radius: 6px;
+  background-color: #fafafa;
+  min-height: 200px;
+  text-align: center;
+  padding-top: 80px;
+}
+
