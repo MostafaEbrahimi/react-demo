@@ -5,7 +5,7 @@ import { Row, Col,Layout,Button ,Affix } from 'antd'
 import HeaderMenu from './components/HeaderMenu'
 import CreateNewWorkflow from './components/CreateNewWorkflow'
 import CreateNewForm from './components/CreateNewForm'
-import Support from './components/Support'
+import Support from './components/Questions'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom"
 import Chat from './components/Chat'
 

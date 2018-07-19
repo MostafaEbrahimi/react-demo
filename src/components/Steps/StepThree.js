@@ -10,7 +10,7 @@ export default class StepThree extends React.Component{
     render() {
         return(
             <div >
-                Step 3
+                <p>Your form has been created successfully! press done to submit</p>
             </div>
 
         );

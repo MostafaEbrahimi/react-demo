@@ -1,5 +1,5 @@
 import React from 'react'
-import { Form, Steps, Button, message } from 'antd'
+import { Form, Steps, Button, message,notification } from 'antd'
 import CartTitle from './CardTitle'
 import Container from './ContentContainer'
 import ReadDoc from './Steps/StepOne'
@@ -32,21 +32,29 @@ export default class CreateNewForm extends React.Component{
         };
     }
 
+    openNotificationWithIcon(type) {
+        notification[type]({
+          message: 'Notification Title',
+          description: 'This is the content of the notification. This is the content of the notification. This is the content of the notification.',
+        });
+    }
+
     next() {
-        const current = this.state.current + 1;
-        this.setState({ current });
+        const current = this.state.current + 1
+        this.setState({ current })
     }
     
     prev() {
-        const current = this.state.current - 1;
-        this.setState({ current });
+        const current = this.state.current - 1
+        this.setState({ current })
     }
 
     success() {
-        message.success('Form Submitted Successfully')
-        const current = 0;
+        this.openNotificationWithIcon('success')
+        const current = 0
         this.setState({current})
     }
+    
     
 
     render() {
